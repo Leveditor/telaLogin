@@ -1,0 +1,149 @@
+/* ESTILO DA FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background-color:#2A0895;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    height: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+/* DIV LATERAL */
+.div-lateral {
+    background-color:#171717;
+    color: white;
+    width: 259px;
+    height: 338px;
+    text-align: center; 
+}
+
+.div-botao {
+    margin-top: 50px;
+}
+
+.div-botao p {
+    font-size: 18px;
+}
+
+/* BOTÃO PRESTADOR DE SERVIÇO */
+.div-botao button {
+    background-color:#1E5FA9;
+    border: none;
+    color: white;
+    cursor: pointer;    
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 60px 10px 60px;
+    transition: .5s;
+}
+
+/* DIV DE INPUTS */
+.div-inputs {
+    padding: 30px;
+    background-color: #F6FAFB;
+}
+
+.div-inputs p {
+    font-weight: bold;
+}
+
+.div-inputs input {
+    width: 350px;
+    height: 25px;
+    border-color:#ABACAD;
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+/* BOTÃO PARA RECUPERAR SENHA */
+.esqueci-senha {
+    display: flex;
+    justify-content: flex-end;
+    color: #69696B;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.div-inputs button {
+    background-color: #171717;
+    color: white;
+    cursor: pointer;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.div-inputs button:hover {
+    background-color: #1E5FA9;
+}
+
+/* BOTÃO DE VOLTAR A TELA INICIAL */
+.botao-voltar {
+    display: flex;
+    justify-content: flex-end;
+    color:#1E5FA9;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.botao-voltar:hover {
+    color: #171717;
+}
+
+@media (min-width: 320px){
+    .container {
+        display: flex;
+        width: 90%;
+        flex-direction: column-reverse; 
+        margin-left: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .div-inputs input {
+        width: 235px;
+    }
+     
+    .div-lateral {
+        width: 302px;
+    }
+
+    .div-inputs {
+        width: 242px;
+    } 
+}
+
+@media (min-width: 675px){
+    .container {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        margin-left: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .div-inputs input {
+        width: 295px;
+    }
+     
+    .div-lateral {
+        width: 352px;
+    }
+
+    .div-inputs {
+        width: 292px;
+    } 
+}
